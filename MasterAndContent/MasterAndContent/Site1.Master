@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterAndContent.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width: 100%;border:double;">
+                <tr style="align-items:center;">
+                    <td colspan="3" style="border:dashed;">DHARMSINH DESAI UNIVERSITY</td>
+                </tr>
+                <tr style="align-items:center;">
+                    <td colspan="1" style="border:solid;"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx">IT Dept.</asp:HyperLink></td>
+                    <td colspan="2" style="border:solid;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </td>
+                </tr>
+                <tr style="align-items:center;">
+                    <td colspan="1" style="border:solid;"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForm2.aspx">CE Dept.</asp:HyperLink></td>
+                    <td colspan="2" style="border:solid;">
+                           <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="align-items:center;">
+                    
+                    <td colspan="1" style="border:solid;"> <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/WebForm3.aspx">EC Dept.</asp:HyperLink> </td>
+                    <td colspan="2" style="border:solid;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="align-items:center;">
+                    <td colspan="2" style="border:solid;">@copyright by DDU</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
